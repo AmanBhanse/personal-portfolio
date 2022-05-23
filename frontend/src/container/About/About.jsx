@@ -1,26 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./About.scss";
 import { motion } from "framer-motion";
-import { images } from "../../constants";
 import { urlFor, client } from "../../client";
-
-const abouts = [
-  {
-    title: "Web Development",
-    description: "I am good web developer",
-    imgUrl: images.about01,
-  },
-  {
-    title: "UX",
-    description: "I am good UX",
-    imgUrl: images.about02,
-  },
-  {
-    title: "ML engineer",
-    description: "I am good ML engineer",
-    imgUrl: images.about03,
-  },
-];
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
