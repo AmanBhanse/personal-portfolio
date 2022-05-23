@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/src/sanityCred.json
 
 # testing
 /coverage
