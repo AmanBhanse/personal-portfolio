@@ -18,5 +18,7 @@
         "react"
     ],
     "rules": {
+        "object-curly-spacing": "off",
+        "newIsCap": false
     }
 }
