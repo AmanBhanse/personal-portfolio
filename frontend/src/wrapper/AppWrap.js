@@ -23,4 +23,4 @@ const AppWrap = (Component , idName , classNames) => function HOC(){
   )
 }
 
-export default AppWrap
+export default AppWrap;
