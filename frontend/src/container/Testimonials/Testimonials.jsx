@@ -25,7 +25,6 @@ const Testimonials = () => {
 
     client.fetch(brandsQuery).then((data) => {
       setBrands(data);
-      console.log(brands);
     });
   }, []);
 
