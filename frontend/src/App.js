@@ -1,7 +1,8 @@
+/* eslint-disable require-jsdoc */
 import './App.scss';
-
-import {About, Footer, Header, Skills, Testimonials, Work} from './container';
-import {NavBar} from './components';
+import React from 'react';
+import { About, Footer, Header, Skills, Testimonials, Work } from './container';
+import { NavBar } from './components';
 function App() {
   return (
     <div className="app">
@@ -15,5 +16,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

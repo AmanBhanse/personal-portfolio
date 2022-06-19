@@ -41,6 +41,7 @@
           "?": "before"
         }
       }
-    ]
+    ],
+    "react/prop-types": "off"
   }
 }
