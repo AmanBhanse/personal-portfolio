@@ -34,10 +34,15 @@ const Testimonials = () => {
     <>
       {testimonials.length && (
         <>
+          <h2 className='app__testimonial-header'>
+            Checkout, what my work buddies think about me
+          </h2>
           <div className='app__testimonial-item app__flex'>
             <img src={urlFor(currTestimonial.imageurl)} alt='testimonial' />
-            <div className='app_testimonial-content'>
-              <p className='p-text'>{currTestimonial.feedback}</p>
+            <div className='app__testimonial-content'>
+              <q>
+                <p className='p-text'>{currTestimonial.feedback}</p>
+              </q>
               <div>
                 <h4 className='bold-text'>{currTestimonial.name}</h4>
                 <h5 className='bold-text'>{currTestimonial.company}</h5>
@@ -71,16 +76,6 @@ const Testimonials = () => {
           </div>
         </>
       )}
-      <div className='app__testimonial-brands app__flex'>
-        {brands.map((brand) => (
-          <motion.div
-            key={brand._id}
-            whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: 0.5, type: 'tween' }}>
-            <img src={urlFor(brand.imgUrl)} alt='brand image' />
-          </motion.div>
-        ))}
-      </div>
     </>
   );
 };
