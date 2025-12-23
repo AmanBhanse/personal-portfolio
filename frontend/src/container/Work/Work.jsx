@@ -29,7 +29,7 @@ const Work = () => {
       if (item === 'All') {
         setFilterWork(works);
       } else {
-        setFilterWork(works.filter((work) => work.tags.includes(item)));
+        setFilterWork(works.filter((work) => work.tags && work.tags.includes(item)));
         setActiveFilter(item);
       }
     }, 500);
@@ -66,7 +66,7 @@ const Work = () => {
           return (
             <div className='app__work-item app__flex' key={index}>
               <div className='app__work-img app__flex'>
-                <img src={urlFor(work.imgUrl)} alt={work.name} />
+                {work.imgUrl && <img src={urlFor(work.imgUrl)} alt={work.name} />}
                 <motion.div
                   whileHover={{ opacity: [0, 1] }}
                   transition={{
