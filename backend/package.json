@@ -2,32 +2,28 @@
   "name": "personalportfolio",
   "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "package.json",
+  "description": "Personal portfolio Sanity CMS",
+  "main": "sanity.config.ts",
   "author": null,
   "license": "UNLICENSED",
   "scripts": {
-    "start": "sanity start",
-    "build": "sanity build"
+    "dev": "sanity dev",
+    "start": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "^2.29.8",
-    "@sanity/core": "^2.29.5",
-    "@sanity/default-layout": "^2.29.8",
-    "@sanity/default-login": "^2.29.8",
-    "@sanity/desk-tool": "^2.29.8",
-    "@sanity/eslint-config-studio": "^2.0.0",
-    "@sanity/vision": "^2.29.8",
-    "eslint": "^8.6.0",
-    "prop-types": "^15.7",
-    "react": "^17.0",
-    "react-dom": "^17.0",
-    "styled-components": "^5.2.0"
+    "@sanity/vision": "^5.1.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "sanity": "^3.52.1",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
-    "@sanity/cli": "^3.64.1"
+    "@sanity/cli": "^3.52.1",
+    "typescript": "^5.0.0"
   }
 }
