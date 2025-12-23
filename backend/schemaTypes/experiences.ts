@@ -6,9 +6,10 @@ export default defineType({
   type: "document",
   fields: [
     defineField({
-      name: "year",
-      title: "Year",
+      name: "title",
+      title: "Title",
       type: "string",
+      description: "e.g., Work History, Career Timeline",
     }),
     defineField({
       name: "works",
