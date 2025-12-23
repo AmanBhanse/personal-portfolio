@@ -10,4 +10,13 @@ export const client = sanityClient({
 });
 
 const builder = imageUrlBuilder(client);
-export const urlFor = (source) => builder.image(source);
+export const urlFor = (source) => {
+  if (!source) {
+    console.warn(
+      "urlFor called with undefined/null source:",
+      new Error().stack
+    );
+    return null;
+  }
+  return builder.image(source);
+};

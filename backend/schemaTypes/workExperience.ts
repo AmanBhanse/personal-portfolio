@@ -6,14 +6,25 @@ export default defineType({
   type: "document",
   fields: [
     defineField({
-      name: "name",
-      title: "Name",
-      type: "string",
-    }),
-    defineField({
       name: "company",
       title: "Company",
       type: "string",
+    }),
+    defineField({
+      name: "name",
+      title: "Position",
+      type: "string",
+    }),
+    defineField({
+      name: "startDate",
+      title: "Start Date",
+      type: "date",
+    }),
+    defineField({
+      name: "endDate",
+      title: "End Date",
+      type: "date",
+      description: "Leave empty if currently working here",
     }),
     defineField({
       name: "desc",
